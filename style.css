@@ -122,4 +122,5 @@ body{ background: rgb(28,35,47);
 
 .search {
     margin-right: 10px;
+    display: none;
 }
