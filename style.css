@@ -9,7 +9,7 @@ body{ background: rgb(28,35,47);
 
 .main-container {
     background:#222c38;
-    padding: 20px 200px;
+    padding: 30px 200px;
 }
 
 .container {
@@ -19,6 +19,7 @@ body{ background: rgb(28,35,47);
     background: radial-gradient(circle,#1f2630, #131a24);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 30px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     min-width: 200px;
@@ -31,6 +32,10 @@ body{ background: rgb(28,35,47);
     justify-content: space-between;
     width: 100%;
     margin-bottom: 20px;
+}
+
+.logo-pic {
+    width: 100px;
 }
 
 .right-nav{
@@ -123,4 +128,44 @@ body{ background: rgb(28,35,47);
 .search {
     margin-right: 10px;
     display: none;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+
+    }
+}
+
+.container-two{
+    display: flex;
+    justify-content: center;
+}
+
+.slider{
+    width: 80%;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 10% 90%,
+        transparent)
+}
+
+.list{
+    display: inline-block;
+    animation: 10s slide infinite;
+    animation-timing-function: linear;
+}
+.image{
+    height: 100px;
+}
+
+.item{
+    display: inline; 
 }
