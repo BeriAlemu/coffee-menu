@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-body{ background: rgb(28,35,47);
+body{ background: #e7e2dc;
 }
 
 .main-container {
-    background:#222c38;
+    background:#e7e2dc;
     padding: 30px 200px;
 }
 
@@ -162,10 +162,73 @@ body{ background: rgb(28,35,47);
     animation: 10s slide infinite;
     animation-timing-function: linear;
 }
+
 .image{
     height: 100px;
+    filter:invert(1);
 }
 
 .item{
     display: inline; 
+}
+
+.clock{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;  
+    background: #e7e2dc;
+}
+
+.clock-border{
+    width: 460px;
+    height: 460px;
+    background-image: url(coffe_clock_updated-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analog-min{
+    position: absolute;
+    width: 30px;
+    height: 150px;
+    top: 116.5px;
+    left: 215px;
+    background-image: url(spoon-min-removebg-preview.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform-origin: 50% 75%;
+}
+
+.analog-sec{
+    position: absolute;
+    width: 25.5px;
+    height: 130px;
+    background-image: url(spoon-second.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: right;
+    top: 216.5px;
+    left: 216.5px;
+    transform-origin: 50% 10%;
+    rotate: 180deg; 
+}
+
+.analog-hour{
+    position: absolute;
+    width: 28px;
+    height: 85px;
+    background-image: url(spoon-hour.png);
+    background-size: 27px;
+    background-repeat: no-repeat;
+    top: 212px;
+    left: 217px;
+    transform-origin: 50% 20%;
+    z-index: 1;
+
 }
